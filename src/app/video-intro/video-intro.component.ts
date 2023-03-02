@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-video-intro',
   templateUrl: './video-intro.component.html',
   styleUrls: ['./video-intro.component.css']
 })
-export class VideoIntroComponent {
+export class VideoIntroComponent implements OnInit{
+ngOnInit(): void {
+  
+}
 
 }
