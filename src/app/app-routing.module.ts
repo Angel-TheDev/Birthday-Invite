@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router' ;
 import { InviteInfoComponent } from './invite-info/invite-info.component';
 import { VideoIntroComponent } from './video-intro/video-intro.component';
 
+const routes: Routes = [
+  { path: 'invite-info', component: InviteInfoComponent},
+]
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+  
 })
 export class AppRoutingModule { }
